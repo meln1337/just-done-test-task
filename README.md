@@ -105,6 +105,10 @@ Here we can see a better situation - the validation slowly reduced
 
 ![eval-steps](images/eval-steps.png)
 
+## Docker
+
+I also created Dockerfile to simulate end-to-end from training to serving the project (CI/CD)
+
 ## Q&A
 
 ### Part 1

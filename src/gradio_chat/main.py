@@ -11,7 +11,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 def generate_response(message, history):
     # Tokenize input
-    inputs = tokenizer(message, return_tensors="pt").to(device)  # Ensure inputs are on CPU
+    inputs = tokenizer(message, return_tensors="pt").to(device)  # Ensure inputs are on GPU
 
     # Generate output
     output_ids = model.generate(**inputs, max_new_tokens=2048, do_sample=True, temperature=0.7)
